@@ -100,6 +100,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias gitconf='git --work-tree=/home/mark --git-dir=/home/mark/.conf'
 alias config='gitconf'
 
+# Add apt-get update alias
+alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get auto-remove -y'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -119,3 +122,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/.applications/liquidprompt/liquidprompt
+
