@@ -101,7 +101,7 @@ alias gitconf='git --work-tree=/home/mark --git-dir=/home/mark/.conf'
 alias config='gitconf'
 
 # Add apt-get update alias
-alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get auto-remove -y'
+alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
