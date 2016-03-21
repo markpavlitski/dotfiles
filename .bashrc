@@ -123,7 +123,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$HOME/.local/bin:$PATH"
 
 # Load Liquid Prompt in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source ~/.applications/liquidprompt/liquidprompt
